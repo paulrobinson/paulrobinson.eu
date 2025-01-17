@@ -31,7 +31,7 @@ describe("QR Code Template", () => {
     let content = urlElement.textContent;
     expect(content).not.toMatch(/\/\/sluggeroo/);
     // We don't want to hardcode the exact url but we can make a good guess about a .com ending
-    expect(content).toMatch(/.com\/sluggeroo/);
+    expect(content).toMatch(/.eu\/sluggeroo/);
   });
 
   it("renders the QR code", () => {

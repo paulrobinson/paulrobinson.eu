@@ -11,7 +11,7 @@ describe("Footer", () => {
 
   it("renders an author name", () => {
     render(<Footer />);
-    expect(screen.getByText(/built by (holly cummins|ducky devine)/)).toBeTruthy();
+    expect(screen.getByText(/built by paul robinson/i)).toBeInTheDocument();
   });
 
   it("renders a social media link", () => {
